@@ -11,7 +11,7 @@
 
 ## 创建项目
 
-1. 克隆此仓库：
+1. 使用 `degit` 克隆此仓库：
 
 ```bash
 npx degit stormzhangbx/react-template <project-name>
@@ -35,3 +35,29 @@ pnpm run dev
 ```bash
 pnpm run build
 ```
+
+## 目录结构
+
+```
+.
+├── public/                 # 静态资源
+├── src/                    # 源代码
+│   ├── assets/             # 资源文件
+│   ├── components/         # 组件
+│   ├── pages/              # 页面
+│   ├── App.tsx             # 入口组件
+│   ├── index.tsx           # 入口文件
+│   └── ...                 # 其他文件
+├── .vscode/                # VSCode 配置
+├── package.json            # 项目配置文件
+├── pnpm-lock.yaml          # 依赖锁定文件
+└── ...                     # 其他文件
+```
+
+## 如何贡献
+
+1. Fork 此仓库
+2. 创建你的分支 (`git checkout -b feature/fooBar`)
+3. 提交你的修改 (`git commit -am 'Add some fooBar'`)
+4. 推送到分支 (`git push origin feature/fooBar`)
+5. 创建一个新的 Pull Request
