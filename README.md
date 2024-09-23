@@ -14,8 +14,8 @@
 1. 克隆此仓库：
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+npx degit stormzhangbx/react-template <project-name>
+cd <project-name>
 ```
 
 2. 安装依赖：
