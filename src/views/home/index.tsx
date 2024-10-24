@@ -1,4 +1,6 @@
 import type { RootState } from '../../store'
+import { PlusOutlined } from '@ant-design/icons'
+import { Button, DatePicker } from 'antd'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from '../../store/counterSlice'
@@ -14,8 +16,10 @@ const Home: React.FC = () => {
         计数:
         {count}
       </p>
-      <button type="button" onClick={() => dispatch(increment())}>增加</button>
-      <button type="button" onClick={() => dispatch(decrement())}>减少</button>
+      <Button type="primary" onClick={() => dispatch(increment())} icon={<PlusOutlined />}>增加</Button>
+      <Button type="primary" onClick={() => dispatch(decrement())}>减少</Button>
+
+      <DatePicker />
     </div>
   )
 }
