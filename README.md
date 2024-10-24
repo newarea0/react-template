@@ -14,7 +14,7 @@
 1. 使用 `degit` 克隆此仓库：
 
 ```bash
-npx degit stormzhangbx/react-template <project-name>
+npx degit newarea0/react-template <project-name>
 cd <project-name>
 ```
 
