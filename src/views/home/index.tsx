@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>首页</h1>
+      <h1 className="text-2xl font-bold">首页</h1>
       <p>
         计数:
         {count}
