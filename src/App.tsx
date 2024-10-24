@@ -1,12 +1,20 @@
-import { PlusOutlined } from '@ant-design/icons'
-import { Button } from 'antd'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <Button type="primary" icon={<PlusOutlined />}>
-        Ant Design 按钮
-      </Button>
+    <div>
+      <ul>
+        <li>
+          <NavLink to="/home">首页</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">关于</NavLink>
+        </li>
+      </ul>
+
+      <div>
+        <Outlet />
+      </div>
     </div>
   )
 }
